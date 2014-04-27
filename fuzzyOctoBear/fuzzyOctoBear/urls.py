@@ -7,8 +7,8 @@ from django.conf.urls import patterns, include, url
 urlpatterns = patterns('fuzzyOctoBear.views',
     # Examples:
     url(r'^$', 'home'),
-    # url('^hello/$', 'hello'),
-    url('^hello$', 'hello'),
+    url('^eventDetails/', 'eventDetails'),
+    # url('^hello$', 'hello'),
     # url(r'^fuzzyOctoBear/', include('fuzzyOctoBear.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
