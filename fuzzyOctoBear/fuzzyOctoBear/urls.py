@@ -4,9 +4,11 @@ from django.conf.urls import patterns, include, url
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = patterns('fuzzyOctoBear.views',
     # Examples:
-    url(r'^$', 'fuzzyOctoBear.views.home', name='home'),
+    url(r'^$', 'home'),
+    # url('^hello/$', 'hello'),
+    url('^hello$', 'hello'),
     # url(r'^fuzzyOctoBear/', include('fuzzyOctoBear.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
