@@ -1,0 +1,268 @@
+.boxSizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans';
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+body #mainContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+body #mainContainer .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+body #mainContainer .header .headerLogo {
+  float: left;
+  height: 100%;
+  width: 30%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+body #mainContainer .header .headerLinks {
+  float: right;
+  height: 100%;
+  width: 70%;
+  line-height: 50px;
+  position: relative;
+}
+body #mainContainer .header .headerLinks .headerLink {
+  float: right;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  position: relative;
+  color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body #mainContainer .header .headerLinks .headerLink:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+body #mainContainer .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body #mainContainer .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 350px;
+}
+body #mainContainer .content .imageSelector {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+body #mainContainer .content .updateSelectorContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 35px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body #mainContainer .content .updateSelectorContainer .updateTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 65px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .makeUpdate {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .makeUpdate .createUpdate {
+  width: 50%;
+  float: left;
+  height: 100%;
+  padding-bottom: 105px;
+  padding-right: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .makeUpdate .createUpdate .createUpdateInput {
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans';
+  font-size: 22px;
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .makeUpdate .createUpdate .createUpdateMeta {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .makeUpdate .createUpdate .createUpdateMeta .metaBlock {
+  height: 50px;
+  width: 100%;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .makeUpdate .createUpdate .createUpdateMeta .metaBlock .metaTitle {
+  height: 20px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .makeUpdate .createUpdate .createUpdateMeta .metaBlock .metaTitle m {
+  font-size: 8px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: 10px;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .makeUpdate .createUpdate .createUpdateMeta .metaBlock .metaList {
+  height: 25px;
+  width: 100%;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .makeUpdate .createUpdate .createUpdateMeta .metaBlock .metaList .metaListItem {
+  font-size: 18px;
+  color: #0a8cd0;
+  float: left;
+  line-height: 25px;
+  height: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .makeUpdate .createUpdate .createUpdateMeta .metaBlock .metaList .metaListItem:hover {
+  border-bottom: 1px solid #0a8cd0;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .makeUpdate .selectUpdate {
+  width: 50%;
+  float: right;
+  height: 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .postUpdate {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .postUpdate .postButton {
+  width: 50%;
+  height: 100%;
+  line-height: 52px;
+  font-size: 22px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .postUpdate .postButton:hover {
+  color: #ffffff;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .postUpdate .postToTwitter {
+  float: left;
+  margin-left: -2px;
+  background: #55acee;
+}
+body #mainContainer .content .updateSelectorContainer .updateSelector .postUpdate .postToFacebook {
+  float: right;
+  margin-right: -2px;
+  background: #46629e;
+}
+.sectionTitle {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  text-transform: uppercase;
+}

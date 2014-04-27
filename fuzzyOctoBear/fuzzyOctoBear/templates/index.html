@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>OSDConf</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/jquery.tmpl.min.js"></script>
+	<script src="scripts/transit.js"></script>
+	<script src="scripts/script.js"></script>
+</head>
+<body>
+	<div id="mainContainer">
+		<div class="header">
+		</div>
+		<div class="content">
+			<div class="imageSelector">
+				<div class="images"></div>
+				<div class="buttonLeft"></div>
+				<div class="buttonRight"></div>
+			</div>
+			<div class="updateSelectorContainer">
+				<div class="updateTitle sectionTitle">Create or Select an update</div>
+				<div class="updateSelector">
+					<div class="makeUpdate">
+						<div class="createUpdate">
+							<textarea class="createUpdateInput" placeholder="Create your own update"></textarea>
+							<div class="createUpdateMeta">
+								
+							</div>
+						</div>
+						<div class="selectUpdate">
+							<div class="row1">
+								<div class="contentSuggestion big"></div>
+							</div>
+							<div class="row2">
+								<div class="contentSuggestion small"></div>
+								<div class="contentSuggestion small"></div>
+							</div>
+						</div>
+					</div>
+					<div class="postUpdate">
+						<div class="postToTwitter postButton">Post To Twitter</div>
+						<div class="postToFacebook postButton">Post To Facebook</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer"></div>
+	</div>
+
+	<script id="headerTemplate" type="text/x-jquery-tmpl">
+		<div class="headerLogo" title="{{html name}}" style="background-image:url({{html logo}})"></div>
+		<div class="headerLinks">
+			{{each links}}
+				<a href="{{html url}}"><div class="headerLink">{{html title}}</div></a>
+			{{/each}}
+		</div>
+	</script>
+
+	<script id="createUpdateMetaTemplate" type="text/x-jquery-tmpl">
+		<div class="metaBlock">
+			<div class="metaTitle">Relevant Hashtags<m>Click to use</m></div>
+			<div class="metaList">
+			{{each hashtags}}
+				<div class="metaListItem">${$value}</div>
+			{{/each}}
+			</div>
+		</div>
+		<div class="metaBlock">
+			<div class="metaTitle">Relevant Usernames<m>Click to use</m></div>
+			<div class="metaList">
+				{{each users}}
+					<div class="metaListItem">${$value}</div>
+				{{/each}}
+			</div>
+		</div>
+	</script>
+
+</body>
+</html>
