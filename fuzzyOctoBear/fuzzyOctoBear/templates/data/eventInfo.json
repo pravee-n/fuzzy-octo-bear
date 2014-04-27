@@ -1,0 +1,13 @@
+{
+	"name": "OSDConf 14",
+	"logo": "images/logo.png",
+	"links": [{
+		"title": "Facebook",
+		"url": "https://www.facebook.com/groups/jiitlug/"
+	}, {
+		"title": "Twitter",
+		"url": "https://twitter.com/JIITOSDC"
+	}],
+	"hashtags": ["#OSDConf", "#hacking", "letsHack"],
+	"users": ["@osdc", "@OSDConf14"]
+}
