@@ -20,27 +20,13 @@ def home(request):
 
 	# event.save()
 	# event = Event.objects.get(id=1)
-	pdb.set_trace()
+	# pdb.set_trace()
 	terms = ['osdc', '#osdc', 'osdconf'	, '#osdconf']
 
 	query = construct_query(terms)
-	rs_json = get_photos([query])
+	res_json = get_photos([query])
 	return render( request, "index.html" )
 
-
-{
-	"name": "OSDConf 14",
-	"logo": "images/logo.png",
-	"links": [{
-		"title": "Facebook",
-		"url": "https://www.facebook.com/groups/jiitlug/"
-	}, {
-		"title": "Twitter",
-		"url": "https://twitter.com/JIITOSDC"
-	}],
-	"hashtags": ["#OSDConf", "#hacking", "letsHack"],
-	"users": ["@osdc", "@OSDConf14"]
-}
 
 def eventDetails(request):
 	event_id = request.GET['eventId']
@@ -71,6 +57,3 @@ def eventDetails(request):
 
 	return HttpResponse(json.dumps(res_event), content_type="application/json")
 
-
-def hello(request):
-	return render( request, "home.html" )
