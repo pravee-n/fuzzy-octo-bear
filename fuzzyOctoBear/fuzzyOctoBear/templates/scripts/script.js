@@ -11,9 +11,9 @@ $(document).ready(function(){
 
 function makeEventInfo(){
 	$.ajax({
-		url: "data/eventInfo.json",
+		url: "/eventDetails",
 		data: {
-			eventId: 0
+			eventId: 'osdc'
 		},
 		type: 'GET',
 		dataType: 'json', // added data type
