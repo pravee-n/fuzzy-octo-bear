@@ -8,7 +8,7 @@ urlpatterns = patterns('fuzzyOctoBear.views',
     # Examples:
     url(r'^$', 'home'),
     url('^eventDetails/', 'eventDetails'),
-    url('^get_photos/', 'get_photos'),
+    url('^get_photos/', 'get_photos_json'),
     # url('^hello$', 'hello'),
     # url(r'^fuzzyOctoBear/', include('fuzzyOctoBear.foo.urls')),
 

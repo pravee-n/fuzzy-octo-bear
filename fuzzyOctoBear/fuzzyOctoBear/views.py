@@ -60,7 +60,7 @@ def eventDetails(request):
 def hello(request):
 	return render( request, "home.html" )
 
-def get_photos(request):
+def get_photos_json(request):
 	terms = ['osdc', '#osdc', 'osdconf'	, '#osdconf']
 	query = construct_query(terms)
 	return HttpResponse(get_photos([query]), content_type="application/json")
