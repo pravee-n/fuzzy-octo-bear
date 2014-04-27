@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
 	var markup = $('#headerTemplate').html();
 	$.template("header", markup);
 
@@ -9,7 +9,7 @@ $(document).ready(function(){
 	// makeAppInfo();
 })
 
-function makeEventInfo(){
+function makeEventInfo() {
 	$.ajax({
 		url: "data/eventInfo.json",
 		data: {
@@ -18,12 +18,34 @@ function makeEventInfo(){
 		type: 'GET',
 		dataType: 'json', // added data type
 		success: function(res) {
-			
-			$('#mainContainer .header').html('');
-			$.tmpl("header", res).appendTo('#mainContainer .header');
 
-			$('.createUpdateMeta').html('');
-			$.tmpl("createUpdateMeta", res).appendTo('.createUpdateMeta');
+			var string = '<div class="headerLogo" title="' + res.name + '" style="background-image:url(' + res.logo + ')"></div><div class="headerLinks">';
+
+			$(res.links).each(function(index, item) {
+				string += '<a href="' + item.url + '"><div class="headerLink">' + item.title + '</div></a>'
+			})
+
+			string += '</div>';
+
+			$('#mainContainer .header').html(string);
+
+			string = '<div class="metaBlock"><div class="metaTitle">Relevant Hashtags<m>Click to use</m></div> <div class="metaList">';
+			$(res.hashtags).each(function(index, item) {
+				string += '<div class="metaListItem">' + item + '</div>'
+			})
+			string += '</div>\
+		</div>\
+		<div class="metaBlock">\
+			<div class="metaTitle">Relevant Usernames<m>Click to use</m></div>\
+			<div class="metaList">';
+
+			$(res.users).each(function(index, item) {
+				string += '<div class="metaListItem">' + item + '</div>'
+			})
+
+			string += '</div> </div>';
+
+			$('.createUpdateMeta').html(string);
 		}
 	});
 }
