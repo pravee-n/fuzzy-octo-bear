@@ -1,6 +1,7 @@
 from django.shortcuts import render
 import pdb, json
 from fuzzyOctoBear.models import *
+from fuzzyOctoBear.get_photos import *
 from django.http import HttpResponse
 
 
@@ -19,7 +20,11 @@ def home(request):
 
 	# event.save()
 	# event = Event.objects.get(id=1)
-	# pdb.set_trace()
+	pdb.set_trace()
+	terms = ['osdc', '#osdc', 'osdconf'	, '#osdconf']
+
+	query = construct_query(terms)
+	rs_json = get_photos([query])
 	return render( request, "index.html" )
 
 
